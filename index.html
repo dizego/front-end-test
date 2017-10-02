@@ -1,0 +1,101 @@
+﻿<!doctype html>
+<!---
+Teste com os requisitos solicitados:
+HTML
+CSS
+JAVASCRIPT
+
+Obviamente foi necessário alguma pesquisa, para relembrar algumas sintaxes do Javascript que são diferentes do Jquery (que eu estou mais acostumado) e pesquisa para escolha de cores e fontes. Obviamente existem formas mais simples e/ou eficientes de fazer, mas estou satisfeito com o resultado apresentado nesta solução para uma requisição simples.
+Foi usado para simbolos especiais e checkbox as fontes do Fontaewsome.
+
+Referência de syntax:
+https://www.w3schools.com/js/default.asp
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript
+
+Refência de cores:
+http://www.flatuicolorpicker.com/
+
+Fontaewsome:
+http://fontawesome.io/icons/
+--->
+<html>
+<head>
+<meta charset="utf-8">
+<script src="https://use.fontawesome.com/af21650efd.js"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<title>Teste Front-end</title>
+</head>
+<body>
+<div class="panel">
+	<div class="row">
+		<div class="total">
+			<span>Total: </span><br>
+			<span id="total">0</span><span> Itens</span>
+			<hr>
+		</div>
+		<div class="search_box" id="search_box">
+			<div class="search_details" id="search_details">
+				<label for="search">Pesquisa:</label>
+				<input type="text" maxlength="50" id="search"><i class="fa fa-search fa-2x clickable" id="bt_search"></i>
+			</div>
+			<div class="search_opts hidden" id="search_opts">
+				<label>Nas colunas:</label><br>
+				<div class="left">
+					<label class="awesomebox" for="all">TUDO<br>
+						<input type="checkbox" id="all" checked>
+						<i class="fa fa-square-o fa-fw"></i>
+						<i class="fa fa-check-square fa-fw"></i>
+					</label>
+				</div>
+				<div class="left">
+					<label class="awesomebox" for="userId">USER<br>
+						<input type="checkbox" id="userId" checked>
+						<i class="fa fa-square-o fa-fw"></i>
+						<i class="fa fa-check-square fa-fw"></i>
+					</label>
+				</div>
+				<div class="left">
+					<label class="awesomebox" for="id">ID<br>
+						<input type="checkbox" id="id" checked>
+						<i class="fa fa-square-o fa-fw"></i>
+						<i class="fa fa-check-square fa-fw"></i>
+					</label>
+				</div>
+				<div class="left">
+					<label class="awesomebox" for="title">TITLE<br>
+						<input type="checkbox" id="title" checked>
+						<i class="fa fa-square-o fa-fw"></i>
+						<i class="fa fa-check-square fa-fw"></i>
+					</label>
+				</div>
+				<div class="left">
+					<label class="awesomebox" for="body">BODY<br>
+						<input type="checkbox" id="body" checked>
+						<i class="fa fa-square-o fa-fw"></i>
+						<i class="fa fa-check-square fa-fw"></i>
+					</label>
+				</div>
+			</div>
+			<div>
+				<i class="fa fa-chevron-down clickable" id="show_opts"></i>
+			</div>
+		</div>
+	</div>
+	<div>
+		<table id="header">
+		</table>
+	</div>
+	<div class="table">
+		<table>
+			<thead>
+				<tr id="thead"></tr>
+			</thead>
+			<tbody id="tbody">
+
+			</tbody>
+		</table>
+	</div>
+</div>
+</body>
+</html>
+<script type="text/javascript" src="js/javascript.js"></script>

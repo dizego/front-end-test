@@ -1,0 +1,116 @@
+body {
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	background-color: #DADFE1;
+	color: #2C3E50;
+}
+div.search_box {
+	background-color: #F2F1EF;
+	position: absolute;
+	width: 50vw;
+	right: 0;
+	text-align: center;
+	border-radius: 0 0 2em 2em;
+	border-bottom: hidden;
+	transition: all 1s ease;
+}
+div.search_box.streched {
+	border-bottom: solid 1px #474747;
+	transition: all 1s ease;
+}
+div.total {
+	position: absolute;
+	left: 0;
+}
+	div.total span {
+		font-weight: bolder;
+	}
+div.row {
+	position: relative;
+	display: flex;
+	width: 100%;
+	margin-bottom: 6em;
+}
+div.left {
+	float: left;
+	width: 20%;
+	height: 100%;
+	text-align: center;
+	margin-top: 0.1em;
+}
+.panel {
+	background-color: #F2F1EF;
+	border-radius: 2em;
+	min-width: 500px;
+	padding: 1em;
+}
+@media screen and (min-width: 70em) {
+	.panel {
+		padding: 5vh;
+		height: 88vh;
+		width: 70vw;
+		margin:auto;
+	}
+	div.search_box {
+		width: 22vw;
+	}
+}
+.table {
+	height: 80vh;
+	overflow: auto;
+}
+table {
+	width: 100%;
+}
+table td, th{
+	padding: 0.5em;
+}
+.even {
+	background-color: #FFF;
+}
+.odd {
+	background-color: #F2F1EF;
+}
+tbody tr:hover {
+	background-color: #DADFE1;
+}
+.search_opts {
+	height: 2.5em;
+	margin-top: 0.5em;
+	background-color: #F2F1EF;
+}
+.search_opts, .search_opts div {
+	transition: all 0.5s ease-out;
+}
+.hidden, .hidden div, .hidden label {
+	background-color: transparent;
+	color: transparent;
+	height: 0 !important;
+}
+.awesomebox input[type="checkbox"], .awesomebox .fa-check-square {
+    display: none;
+}
+.awesomebox input[type="checkbox"]:checked ~ .fa-check-square {
+    display: inline-block;
+}
+.awesomebox input[type="checkbox"]:checked ~ .fa-square-o {
+    display: none;
+}
+.clickable {
+	cursor: pointer;
+	margin: auto;
+}
+.clickable:hover {
+	color: #6C7A89;
+}
+.search_details {
+	display: flex;
+	align-items: center;
+} 
+.search_details input {
+	height: 1.5em;
+	width: 100%;
+	border-radius: 0.5em;
+	padding: 0.2em;
+	margin: 0.5em;
+	font-size: 1em;
+}
